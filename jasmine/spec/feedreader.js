@@ -104,6 +104,7 @@ $(function() {
             it(' feed has at least one enrty elemnet', function(){
                 var elem = $('.entry').length;
                 expect(elem).toBeGreaterThan(0);
+                done();
             });
 
     });

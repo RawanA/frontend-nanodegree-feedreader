@@ -33,15 +33,10 @@ $(function() {
          */
         it('URL is defined and not empty', function(done){
             
-            beforeEach(function() {
-      for(feed in allFeeds){
-          feed.url = 'value';
-      }
-    });
+
            for(feed in allFeeds){
                expect(feed.url).toBeDefined();
                expect(feed.url).not.toBe('');
-//                done();
            }
             
         });
@@ -100,6 +95,7 @@ $(function() {
          */        
         beforeEach(function(done){
             loadFeed(0, done);
+        });
             
             it(' feed has at least one enrty elemnet', function(){
                 var elem = $('.entry').length;

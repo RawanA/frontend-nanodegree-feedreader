@@ -86,7 +86,6 @@ $(function() {
             expect($("body").hasClass("menu-hidden")).toBeFalsy();
             Icon.click();
             expect($("body").hasClass("menu-hidden")).toBeTruthy();
-
     });
     /* TODO: Write a new test suite named "Initial Entries" */
 

@@ -33,8 +33,8 @@ $(function() {
          */
         it('URL is defined and not empty', function(){
            forEach(feed in allFeeds){
-               expect(feed).toBeDefined();
-               expect(feed.length).not.toBe('');
+               expect(feed.url).toBeDefined();
+               expect(feed.url).not.toBe('');
            }
         });
 

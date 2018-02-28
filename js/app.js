@@ -9,19 +9,20 @@
 // The names and URLs to all of the feeds we'd like available.
 var allFeeds = [
     {
-        name: '',
-        url: ''
+        name: 'Udacity Blog',
+        url: 'https://blog.udacity.com/feed'
     }, {
-        name: '',
-        url: ''
+        name: 'CSS Tricks',
+        url: 'https://feeds.feedburner.com/CssTricks'
     }, {
-        name: '',
-        url: ''
+        name: 'HTML5 Rocks',
+        url: 'https://feeds.feedburner.com/html5rocks'
     }, {
-        name: '',
-        url: ''
+        name: 'Linear Digressions',
+        url: 'https://feeds.feedburner.com/udacity-linear-digressions'
     }
 ];
+
 
 /* This function starts up our application. The Google Feed
  * Reader API is loaded asynchonously and will then call this

@@ -97,7 +97,7 @@ $(function() {
             loadFeed(0, done);
         });
             
-            it(' feed has at least one enrty elemnet', function(){
+            it(' feed has at least one enrty elemnet', function(done){
                 var elem = $('.entry').length;
                 expect(elem).toBeGreaterThan(0);
                 done();

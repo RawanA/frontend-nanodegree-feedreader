@@ -1,16 +1,16 @@
 # Feedreader Project with Udacity
 
 this the fainal project of FEND in udacity, it is  required to use a testing suit to make sure the code is valid, and identify the mistakes and problems automatically.
+#### Green dots (passed) , Red exes (Fails)
 
 
 ## Run this Project on you computer Locally 
 1. Downalod or Clone the Prject 
 2. Open index.html file 
 3. Chech the steps of testing at 
-,,,
+```
 jasmine/spec/feereader.js 
-,,,
-
+```
 
 ## Demo 
 https://rawana.github.io/frontend-nanodegree-feedreader/#

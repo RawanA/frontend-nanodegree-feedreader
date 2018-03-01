@@ -63,7 +63,7 @@ $(function() {
         it(' is hidden by default', function(){
 //             retrun boolean value after checking if the HTML elemnt has this class
             var boolean =  $("body").hasClass("menu-hidden");
-            expect(boolean).not.toBe(true);
+            expect(boolean).not.toBe(false);
             
         });   
 

@@ -61,7 +61,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
         it(' is hidden by default', function(){
-//             retrun boolean value after checking if the HTML elemnt has this class
+        //retrun boolean value after checking if the HTML elemnt has this class
             var boolean =  $("body").hasClass("menu-hidden");
             expect(boolean).not.toBe(false);
             
@@ -94,11 +94,11 @@ $(function() {
             loadFeed(0, done);
         });
             
-            it(' feed has at least one enrty elemnet', function(done){
-                var elem = $('.entry').length;
-                expect(elem).toBeGreaterThan(0);
-                done();
-            });
+        it(' feed has at least one enrty elemnet', function(done){
+             var elem = $('.entry').length;
+             expect(elem).toBeGreaterThan(0);
+             done();
+         });
 
     });
 
@@ -117,13 +117,14 @@ $(function() {
                 done();
             });
          });
+         
          it(' new feed is loaded and content changes', function(done){
                 loadFeed(1, function() {
                   after = $('.feed').html();
                   expect(after).not.toEqual(before);
                   done();
                 });
-            });
+          });
          
      });
 }());

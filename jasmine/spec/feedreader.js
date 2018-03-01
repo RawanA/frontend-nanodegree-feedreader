@@ -119,7 +119,7 @@ $(function() {
                 before = $('.feed').html();
                 done();
             });
-         
+         });
          it(' new feed is loaded and content changes', function(done){
                 loadFeed(1, function() {
                   after = $('.feed').html();

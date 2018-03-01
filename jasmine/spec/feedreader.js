@@ -31,15 +31,11 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('URL is defined and not empty', function(done){
+        it('URL is defined and not empty', function(){
             allFeeds.forEach(function(feed){
                 expect(feed.url).toBeDefined();
                expect(feed.url).not.toBe('');
             });
-//            for(feed in allFeeds){
-               
-//            }
-            
         });
 
 
@@ -48,10 +44,10 @@ $(function() {
          * and that the name is not empty.
          */
          it('Name is defined and not empty', function(){
-           for(feed in allFeeds){
+           allFeeds.forEach(function(feed){
                expect(feed.name).toBeDefined();
                expect(feed.name).not.toBe('');
-           }
+           });
         });
     });
 

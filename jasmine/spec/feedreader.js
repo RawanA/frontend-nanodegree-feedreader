@@ -91,10 +91,8 @@ $(function() {
 
     
      describe('New Feed Selection', function() {
-        /* test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
+
+         //this test makes sure that load feeed function will load a new feed, and by that the content will change.
          var before;
          var after;
          

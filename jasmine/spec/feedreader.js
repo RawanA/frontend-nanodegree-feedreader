@@ -37,10 +37,7 @@ $(function() {
         });
 
 
-        /* test that loops through each feed
-         * in the allFeeds object and ensures it has a name defined
-         * and that the name is not empty.
-         */
+        // this test that each feed has a defined Name  and is not empty. 
          it('Name is defined and not empty', function(){
            allFeeds.forEach(function(feed){
                expect(feed.name).toBeDefined();
@@ -53,11 +50,9 @@ $(function() {
     
     describe('The menu', function() {
 
-        /* test that ensures the menu element is
-         * hidden by default. You'll have to analyze the HTML and
-         * the CSS to determine how we're performing the
-         * hiding/showing of the menu element.
-         */
+        
+        // this test ensure that the menure is set as hidden by defualt at first.
+        
         it(' is hidden by default', function(){
         //retrun boolean value after checking if the HTML elemnt has this class
             var boolean =  $("body").hasClass("menu-hidden");
@@ -65,11 +60,8 @@ $(function() {
             
         });   
 
-         /* test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
-          */
+       
+        // this test ensures that the menue changes visibility when the icon is clicke on .
         it(' changes visibility when clicked', function(){
             var Icon = $('.menu-icon-link');
             Icon.click();
@@ -82,12 +74,9 @@ $(function() {
     
     describe('Initial Entries', function() {
         
-         /* test that ensures when the loadFeed
-         * function is called and completes its work, there is at least
-         * a single .entry element within the .feed container.
-         * Remember, loadFeed() is asynchronous so this test will require
-         * the use of Jasmine's beforeEach and asynchronous done() function.
-         */        
+        
+        // this test ensure the loadFeed function works properly when it is called.
+        // at there must be at least on entry elemnt in feed container.
         beforeEach(function(done){
             loadFeed(0, done);
         });

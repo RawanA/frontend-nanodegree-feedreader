@@ -82,7 +82,7 @@ $(function() {
         });
             
         it(' feed has at least one enrty elemnet', function(done){
-             var elem = $('.feed .entry').length;
+             var elem = $('.feed.entry').length;
              expect(elem).toBeGreaterThan(0);
              done();
          });

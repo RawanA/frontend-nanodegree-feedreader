@@ -96,20 +96,23 @@ $(function() {
          var before;
          var after;
          
-         beforeEach(function(done){
-            loadFeed(0, function() {
-                before = $('.feed').html();
-                done();
-            });
-         });
+        beforeEach(function(done) {
          
-         it(' new feed is loaded and content changes', function(done){
-                loadFeed(1, function() {
-                  after = $('.feed').html();
-                  expect(after).not.toEqual(before);
-                  done();
-                });
-          });
+          loadFeed(0, function() {
+                before = $('.feed').html();
+                loadFeed(1, done);
+           });
+        });
+    
+         it('content actually changes', function() {
+             after = $('.feed').html();
+             expect(after).not.toEqual(before);
+        });
+
+        
+        afterEach(function() {
+            loadFeed(0);
+        });
          
      });
 }());
